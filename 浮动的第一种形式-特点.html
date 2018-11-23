@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		/*设置三个div为相同的宽高*/
+		div{
+			width: 300px;
+			height: 150px;
+			/*能让3个块级元素排列到同一行*/
+			float: left;
+			/*浮动的规则，也就是怎么跑：
+				浮动有两个方向，如果是向左浮动，那么就是元素先网左边跑，跑到最左边，然后在向上跑，跑到上一行的最右边，再想最左边跑，直到碰到边缘或者同级元素。
+			*/
+		}
+		/*单独给每一个div加背景颜色*/
+		.x{
+			background: #00A2E8;
+		}
+		.y{
+			background: #FF7F27;
+		}
+		.z{
+			background: #22B14C;
+		}
+	</style>
+</head>
+<body>
+	<div class="x">
+		
+	</div>
+	<div class="y">
+		
+	</div>
+	<div class="z">
+		
+	</div>
+</body>
+</html>

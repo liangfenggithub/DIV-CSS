@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>今年的腾讯首页分块布局</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.header{
+			width: 1240px;
+			height: 35px;
+	/*		border: 1px solid red;*/
+			margin: 0 auto;
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+		.header img{
+			width: 134px;
+			height: 35px;
+			float: left;
+		}
+		.header form{
+			margin-left: 350px;
+			float: left;
+		}
+		.header a{
+			float:right;
+		}
+		.header form input.button{
+			width: 110px;
+			height: 35px; 
+			background: #1479D7;
+			color: #FFFFFF;
+			font-size: 1.1em;
+			font-weight: 400;
+		}
+		.header form select{
+			background: #F3F6F8;
+			height: 35px;
+
+		}
+		.header form .keyword{
+			background: #F3F6F8;
+			height: 35px;
+		}
+		.navbar{
+			height: 50px;
+			width: 1240px;
+			background: #1479D7;
+			margin: 0 auto;
+		}
+		.navbar a{
+			line-height: 50px;
+			margin-left: 35px;
+			text-decoration: none;
+			color:#FFF;
+			font-weight: 400;
+			font-size: 1.1em;
+		}
+		.navbar a:hover{
+			background: #CAE0EC;
+			color: #1479D7;
+		}
+		.pic{
+			height: 75px;
+			width: 1240px;
+			/*border: solid 1px red;*/
+			margin: 0 auto;
+			margin-top: 35px;
+		}
+		.pic .left{
+			float: left;
+		}
+		.pic .right{
+			float:right;
+		}
+		.main{
+			width: 1240px;
+			height: 700px;
+			margin: 0 auto;
+
+			margin-top: 35px;
+		}
+		.main .left{
+			width:390px;
+			height: 700px;
+			/*background: pink;*/
+			float:left;
+		}
+		.main .center{
+			width:390px;
+			height: 700px;
+			background: dodgerblue;
+			float:left;
+			margin-left: 35px;
+			margin-right: 35px;
+		}
+		.main .right{
+			width:390px;
+			height: 700px;
+			background: green;
+			float:left;
+		}
+		.items a{
+			display: block;
+			text-decoration: none;
+			line-height: 30px;
+			color: #000;
+		}
+		.items a:hover{
+			color: #0c82ff;
+		}
+		.itempic,.picnew{
+			width: 187px;
+			height: 106px;
+			float: left;
+			margin-top:10px;
+			margin-bottom:10px;
+		}
+		.itempic{
+			margin-left:10px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<img src="./image/qq.png">
+		<form>
+			<select>
+				<option>网页</option>
+				<option>图片</option>
+				<option>视频</option>
+				<option>音乐</option>
+				<option>地图</option>
+				<option>网页</option>
+				<option>网页</option>
+				<option>网页</option>
+			</select>
+			<input type="text" name="" class="keyword">
+			<input type="submit" value="搜狗搜索" name="" class="button">
+		</form>
+		<a href="">空间</a>
+		<a href="">邮箱</a>
+		<a href="">登录</a>
+	</div>
+	<div class="navbar">
+		<a href="">新闻</a>
+		<a href="">视频</a>
+		<a href="">图片</a>
+		<a href="">新闻</a>
+		<a href="">视频</a>
+		<a href="">图片</a>
+		<a href="">新闻</a>
+		<a href="">视频</a>
+		<a href="">图片</a>
+		<a href="">新闻</a>
+		<a href="">视频</a>
+		<a href="">新闻</a>
+		<a href="">视频</a>
+		<a href="">图片</a>
+		<a href="">新闻</a>
+		<a href="">视频</a>
+		<a href="">图片</a>
+		
+	</div>
+	<div class="pic">
+		<img src="./image/tx.png" class="left">
+		<img src="./image/tx.png" class="right">
+		
+	</div>
+	<div class="main">
+		<div class="left">
+			<div class="headerbar">
+				<a href="">要闻</a>
+				<a href="">天津新闻</a>
+				<a href="">天津--10度</a>
+			</div>
+			<div class="items">
+				<a href="">中国妇女十二大开幕 习近平等到会祝贺</a>
+				<a href="">为什么一而再、再而三来这里？</a>
+				<a href="">马克思主义大众化的先驱</a>
+				<a href="">为什么一而再、再而三来这里？</a>
+				<a href="">马克思主义大众化的先驱</a>
+				<a href="">为什么一而再、再而三来这里？</a>
+				<a href="">马克思主义大众化的先驱</a>
+				
+				<img src="./image/td.jpg" alt="" class="itempic">
+				<div class="picnew">
+					<a href="">武侠小说泰斗金庸逝世 享年94岁</a>
+				</div>
+				
+				
+
+				<a href="">中国妇女十二大开幕 习近平等到会祝贺</a>
+				<a href="">为什么一而再、再而三来这里？</a>
+				<a href="">马克思主义大众化的先驱</a>
+				<a href="">为什么一而再、再而三来这里？</a>
+				<a href="">马克思主义大众化的先驱</a>
+				<a href="">为什么一而再、再而三来这里？</a>
+				<a href="">马克思主义大众化的先驱</a>
+				
+				<img src="./image/tlp.jpg" class="itempic">
+				<div class="picnew">
+					<a href="" >谁让“通俄门”调查为美国中期选举“静音”？还不是特朗普 谁让“通俄门”调查为美国中期选举“静音”？还不是特朗普</a>
+				</div>
+
+				<a href="">中国妇女十二大开幕 习近平等到会祝贺</a>
+				<a href="">为什么一而再、再而三来这里？</a>
+				<a href="">马克思主义大众化的先驱</a>
+				<a href="">为什么一而再、再而三来这里？</a>
+			</div>
+			
+		</div>
+		<div class="center">
+			
+		</div>
+		<div class="right">
+			
+		</div>
+	</div>
+</body>
+</html>

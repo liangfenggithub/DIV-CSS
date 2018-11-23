@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.hd{
+			width: 700px;
+			height: 500px;
+			border: solid 1px red;
+			margin: 50px auto;
+			/*背景颜色*/
+			/*background-color:#bbb;*/
+			/*background-color: rgb(0,255,0,0.5);*/
+			/*背景图片*/
+			background-image: url(./image/d.jpg);
+			/*背景平铺方式*/
+			background-repeat: no-repeat;/*repeat-y、 no-repeat 分别是xy方向平铺或者不重复*/
+			/*背景图位置*/
+			background-position: 100px 50px; /*这个数据参考位置是本元素*/
+			/*没有生效，不知道为什么。综合性写法 参数顺序：背景颜色 背景图 平铺方式 水平方向位置 垂直方向位置，不需要哪个就不用写*/
+			/*background: #FFFCF4 url(./image/d.jpg) no-repeat 200px 150px;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="hd"></div>
+</body>
+</html>

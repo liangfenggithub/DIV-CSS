@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		/*设置三个div为相同的宽高*/
+		div{
+			width: 300px;
+			height: 150px;
+			/*能让3个块级元素排列到同一行*/
+			
+		}
+		/*单独给每一个div加背景颜色*/
+		.x{
+
+			background: #00A2E8;
+			
+		}
+		.y{
+		
+			float:left;
+			background: #FF7F27;
+	
+		}
+		.z{
+			/*	为方便观察，设置其宽高大一些*/
+			width: 500px;
+			height: 220px;
+			background: #22B14C;
+		}
+	</style>
+</head>
+<body>
+	<!-- 第一、第三不浮动，第二块浮动，是怎样的效果呢 
+	
+	特点
+	1.正常元素排列自己位置时时会忽略掉它前面的浮动元素。（第三个div忽略掉第二块浮动的div）
+	2.这种排列方式有个例外，如果第三个正常div中有内容的话，那么第二个div就会把第三个div内容挤到一边，这也就是说浮动虽然脱离文档流，但是脱离不彻底的原因。具体见“浮动实现文字环绕效果.html”
+
+	-->
+	<div class="x">
+		
+	</div>
+	<div class="y">
+		
+	</div>
+	<div class="z">
+	</div>
+</body>
+</html>

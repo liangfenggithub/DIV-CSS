@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>层级遇到的问题</title>
+	<style type="text/css">
+		.a{
+			width: 800px;
+			height: 160px;
+			border: solid 5px limegreen;
+			margin: 30px auto;
+			position: relative;
+			z-index: 1;
+		}
+		.b{
+			width: 800px;
+			height: 300px;
+			border: solid 5px dodgerblue;	
+			margin: 0px auto;
+			position: relative;
+		}
+		.a .x{
+			width: 200px;
+			height: 500px;
+			position: absolute;
+			right: 100px;
+			top: 30px;
+			background: limegreen;
+		}
+		.b .y{
+			width: 500px;
+			height: 400px;
+			background: dodgerblue;
+			position: absolute;
+			right: 60px;
+			top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+	只有亲兄弟才能比层级。
+	a和b是亲兄弟，只要a的z-index大于b的，那么a的子元素x就比b的子元素y高。
+	 -->
+	<div class="a">
+		<div class="x"></div>
+	</div>
+	<div class="b">
+		<div class="y"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位</title>
+	<style type="text/css">
+		.box{
+			height: 500px;
+			width: 800px;
+			margin: 100px auto;
+			border: solid 3px blue;
+			position: relative;/*这里的定位并不是为了本身定位，而是为了给子集元素提供一个参考。*/
+		}
+		.box .k{
+			height: 200px;
+			width: 300px;
+			background: pink;
+			position: absolute;
+			left: 150px;
+			top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="k">
+		</div>
+	</div>
+</body>
+</html>

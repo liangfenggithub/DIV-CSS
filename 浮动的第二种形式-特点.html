@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		/*设置三个div为相同的宽高*/
+		div{
+			width: 300px;
+			height: 150px;
+			/*能让3个块级元素排列到同一行*/
+			
+		}
+		/*单独给每一个div加背景颜色*/
+		.x{
+			background: #00A2E8;
+
+		}
+		.y{
+			background: #FF7F27;
+			float:left;
+		}
+		.z{
+			background: #22B14C;
+			float:left;
+		}
+	</style>
+</head>
+<body>
+	<!-- 第一块不浮动，第二、第三块浮动，是怎样的效果呢 
+
+		如果浮动元素的上一行是正常元素，那么浮动元素是跑不上去的。
+
+	-->
+	<div class="x">
+		
+	</div>
+	<div class="y">
+		
+	</div>
+	<div class="z">
+		
+	</div>
+</body>
+</html>

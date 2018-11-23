@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航栏练习</title>
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+			
+		}
+		.menu{
+			width: 1000px;
+			height: 43px;
+			background: #efefef;
+			border-top:2px solid #1165AC;
+			margin:100px auto;
+		}
+		.menu a{
+			/*因为行内元素没有宽高，要设置宽高必须转为块级元素
+			  行内块级元素也行，但是会造成每每个a标签之间有空白，造成这种现象的原因是我们的代码中有回车符，如果去掉回车和空格就没有空白了，一般实际中我们还是转成块级元素。
+
+			*/
+			display: block; 
+			width:111px;
+			height: 43px;
+			color: #3c3d3d;
+			/*
+			float可以让块级元素排列在同一行，且不印象宽高属性。
+
+			 */
+			float:left;
+			text-decoration: none;/*没有下划线*/
+			line-height: 43px;  /*采用行高让他上下居中，而不是padding*/
+			text-align: center;/*水平居中*/
+		}
+		/*伪类选择器，当 鼠标移到元素上时，变成了hover*/
+		.menu a:hover{
+			background:#1165AC;
+			color:#fff;
+		}
+
+		/*默认的选中状态*/
+		.menu a.index{
+			background:#1165AC;
+			color:#fff;
+		}
+	</style>
+</head>
+<body>
+<!-- 	实战写页面三步骤
+	1. 将内容放在合适的标签内
+	2. 编写内容的样式
+	3. 调整到合适的位置 -->
+	<div class="menu">
+		<a href="" class="index">首页</a>
+		<a href="">新房</a>
+		<a href="">咨询</a>
+		<a href="">二手房</a>
+		<a href="">行情</a>
+		<a href="">海外</a>
+		<a href="">本月开盘</a>
+		<a href="">打折优惠</a>
+		<a href="">看房团</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>京东图片排列</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.jd{
+			width: 790px;
+			height: 470px;
+			border: 5px solid blue;
+			margin: 100px auto;
+		}
+		img{
+			float:left;
+			margin-left: 5px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+<!-- 	通过浮动的第四个特点实现“左右两栏，右栏上中下排列”
+	原理是浮动元素的父元素的宽度不够，子元素被挤到下一行。 -->
+	<div class="jd">
+		<img src="./image/c.jpg">
+		<img src="./image/a.jpg">
+		<img src="./image/b.jpg">
+		<img src="./image/a.jpg">
+	</div>
+</body>
+</html>

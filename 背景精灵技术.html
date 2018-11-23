@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景精灵技术</title>
+	<style type="text/css">
+		.hd{
+			width:95px;	
+			height:116px;
+			border: solid 2px red;
+			margin: 50px auto;
+			background-image: url(./image/mndj.jpg);
+			background-repeat: no-repeat;
+			background-position: -42px -56px;
+			/*利用背景精灵技术只显示大图片中的一部分
+				凡客诚品官网就是这种方案。
+			*/
+		}
+	</style>
+</head>
+<body>
+	<!-- 背景精灵（css雪碧、cssSprite）：在一个有限大小的元素内，只显示一张打背景图中的一部分内容
+		程序员将多张小图片防在一个大图片中，然后利用背景精灵技术显示。目的在于减少浏览器对服务器的请求数
+
+	 -->
+	<div class="hd">
+		
+	</div>
+	
+</body>
+</html>

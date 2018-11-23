@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>腾讯首页分块布局</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.search{
+			width:1000px;
+			height:70px;
+			background: #F28E92;
+			margin: 0 auto; /*水平居中*/
+		}
+		.nav{
+			width: 1000px;
+			height: 65px;
+			background: #3D95D5;
+			margin: 0 auto;
+		}
+		.picture{
+			width: 1000px;
+			height: 75px;
+			/*border: 1px solid blue;*/
+			margin: 0 auto;
+			margin-top: 12px;
+			margin-bottom: 12px;
+		}
+		.picture img.right{ /*picture下的类名为right的img*/
+			float: right;
+		}
+		.picture img.left{
+			float: left;
+		}
+		.main{
+			width: 1000px;
+			height: 700px;
+			border: 2px solid green;
+			margin: 0 auto;
+		}
+		.main .left{
+			width: 350px;
+			height: 700px;
+			background: pink;
+			float: left;
+		}
+		.main .center{
+			width: 330px;
+			height: 700px;
+			background: yellow;
+			float:left;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		.main .right{
+			width: 280px;
+			height: 700px;
+			background: dodgerblue;
+			float:left;
+		}
+	</style>
+</head>
+<body>
+	<!-- 搜索区域开始 -->
+	<div class="search">
+		
+	</div>
+	<!-- 搜索区域结束 -->
+
+	<!-- 导航开始 -->
+	<div class="nav">
+		
+	</div>
+	<!-- 导航结束 -->
+
+	<!-- 两张图片 -->
+	<div class="picture">
+		<img src="./image/tx.png" class="left">
+		<img src="./image/tx.png" class="right">
+	</div>
+	<!-- 两张图片结束 -->
+	
+	<!-- 主题内容 -->
+		<div class="main">
+			<div class="left"></div>
+			<div class="center"></div>
+			<div class="right"></div>
+			
+		</div>
+	<!-- 主题内容结束 -->
+
+</body>
+</html>

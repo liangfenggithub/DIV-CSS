@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 300px;
+			height: 150px;
+		
+		}
+		.x{
+			background: #00A2E8;
+		}
+		.y{
+			/*绝对定位*/
+			position: absolute;
+			left: 100px;
+			top: 50px;
+			background: #FF7F27;
+		}
+		.z{
+			background: #22B14C;
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+	绝对定位：
+	1. 完全脱离文档流
+	2. 元素在文档流中的位置不被保留
+	3. 元素定位参照于离他最近的有定位属性的父级元素进行定位
+		绝对定位一般有一个父级元素
+	 -->
+	<div class="x">
+		
+	</div>
+	<div class="y">
+		
+	</div>
+	<div class="z">
+		
+	</div>
+</body>
+</html>

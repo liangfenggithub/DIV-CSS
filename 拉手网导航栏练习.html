@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="msapplication-window" content="width=device-width;height=device-height">
+	<title>拉手网导航栏练习</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.menu{
+			width:100%;
+			height: 40px;
+			margin:100px 0px;
+			border-top: 2px solid #FF7E00;
+			padding-left: 114px;
+			padding-right: 114px;
+			background: #FF7E00;
+
+		}
+		.menu a{
+			/*要向设置a标签的背景宽高，必须先将a标签转换为block显示，因为a标签是行内标签，不能设置宽高，而块级元素block可以*/
+			display: block;
+			/*float:left能让标签排到一行中*/
+			float:left;
+			background: #FF7E00;
+			color: #fff;
+			line-height: 40px;
+			text-decoration: none;
+			padding-left: 17px;
+			padding-right: 18px;
+			font-size: 	14px;
+			font-weight: 700;/*字重，也就是粗体，默认是400，加粗一般是700*/
+
+		}
+		.menu a:hover{
+			background: #E36702;
+		}
+		/*第一个标签*/
+		.menu a.first{
+			border-top: 2px solid #FF7E00;
+			background: #FFF;
+			color: #FF7E00;
+		}
+		.menu a.iphone{
+			float: right;	
+			background: #FF9126;
+		}
+	</style>
+</head>
+<body>
+<!-- 	三步
+	1.把内容放到合适的标签内
+	2.给内容写样式
+	3.调整元素到合适的位置 -->
+	<div class="menu">
+		<a href="" class="first">查看全部分类</a>
+		<a href="">首页</a>
+		<a href="">身边团购</a>
+		<a href="">今日特价</a>
+		<a href="">美食</a>
+		<a href="">电影</a>
+		<a href="">酒店</a>
+		<a href="">旅游</a>
+		<a href="">特价机票</a>
+		<a href="" class="iphone">手机上拉手</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位-练习-美团产品卡片</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.mt{
+			width: 233px;
+			height: 246px;
+			margin: 100px auto;
+			position: relative;/*此次相对定位是为了给子元素一个参考位置，并不是为了自己定位*/
+			border:1px solid red;
+		}
+		.mt:hover{
+			background: #f4f4f4;
+
+		}
+		.mt img{
+			width: 213px;
+			height: 120px;
+			position: absolute;/*绝对定位，参考对象是离他最近的具有定位属性的父元素：.mt*/
+			top: 10px;
+			left: 10px;
+		}
+		.mt .title{
+			position:absolute;
+			left:10px;
+			top:140px;
+			font-size:16px;
+			font-weight: 500;
+			overflow: hidden;
+		}
+		.mt .pj{
+			position: absolute;
+			top:165px;
+			left: 150px;
+			color: #999;
+			font-size: 10px;
+			line-height: 16px;
+
+		}
+		.mt .pos{
+			position: absolute;
+			top:185px;
+			left: 10px;
+			color: #999;
+			font-size: 10px;
+			line-height: 16px;
+		}
+		.mt .price{
+			color: #Ff6600;
+			font-size:22px;
+			position: absolute;
+			top: 211px;
+			left: 10px;
+		}
+		.mt .price .yuan{
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="mt">
+		<img src="./image/pgl.jpg">
+		<p class="title">胖哥俩肉蟹煲（西单大悦城...）</p>
+		
+		<p class="pj">171个评价</p>
+		<p class="pos">西单</p>
+		<p class="price">
+			<span class="yuan">￥</span>
+			<span>126.0</span>
+			<span class="yuan">起</span>
+		</p>
+
+	</div>
+</body>
+</html>

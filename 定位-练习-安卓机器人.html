@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位练习-机器人</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.robot{
+			width: 600px;
+			height: 500px;
+			border: 4px solid lightgrey;
+			margin: 100px auto;
+			position: relative;/*这里的相对定位是为了给子元素参考，并不是确定自己的位置*/
+		}
+		.robot .head{
+			width: 222px;
+			height: 117px;
+			background: #A4CA39;
+			position: absolute; /*绝对定位,参考位置是相对于离本元素最近的具有定位属性的父元素：robot*/
+			left: 189px;
+			top: 60px;
+		}
+		.robot .head .eyel{/*眼睛*/
+			width: 20px;
+			height: 20px;
+			background: #fff;
+			position: absolute;/*绝对定位,参考位置是相对于离本元素最近的具有定位属性的父元素：head*/
+			left: 55px;
+			top: 45px;
+		}
+		.robot .head .eyer{
+			width: 20px;
+			height: 20px;
+			background: #fff;
+			position: absolute;/*绝对定位,参考位置是相对于离本元素最近的具有定位属性的父元素：head*/
+			right: 55px;
+			top: 45px;
+		}
+		.robot .earl{ /*耳朵*/
+			width: 10px;
+			height: 26px;
+			background: #A4CA39;
+			position: absolute;/*绝对定位,参考位置是相对于离本元素最近的具有定位属性的父元素：robot*/
+			left: 229px;
+			top: 34px;
+		}
+		.robot .earr{ /*耳朵*/
+			width: 10px;
+			height: 26px;
+			background: #A4CA39;
+			position: absolute;/*绝对定位,参考位置是相对于离本元素最近的具有定位属性的父元素：robot*/
+			right: 229px;
+			top: 34px;
+		}
+		.robot .body{
+			width: 222px;
+			height: 135px;
+			background: #A4CA39;
+			position: absolute;/*绝对定位,参考位置是相对于离本元素最近的具有定位属性的父元素：robot*/
+			top: 187px;
+			left: 189px;
+		}
+		.robot .arml{
+			width: 30px;
+			height: 98px;
+			background: #A4CA39;
+			position: absolute;/*绝对定位,参考位置是相对于离本元素最近的具有定位属性的父元素：robot*/
+			left: 150px;
+			top: 187px;
+		}
+		.robot .armr{
+			width: 30px;
+			height: 98px;
+			background: #A4CA39;
+			position: absolute;/*绝对定位,参考位置是相对于离本元素最近的具有定位属性的父元素：robot*/
+			right: 150px;
+			top: 187px;
+		}
+		.robot .legl{
+			width: 30px;
+			height: 73px;
+			background: #A4CA39;
+			position: absolute;/*绝对定位,参考位置是相对于离本元素最近的具有定位属性的父元素：robot*/
+			top: 322px;
+			left: 240px;
+		}
+		.robot .legr{
+			width: 30px;
+			height: 73px;
+			background: #A4CA39;
+			position: absolute;/*绝对定位,参考位置是相对于离本元素最近的具有定位属性的父元素：robot*/
+			top: 322px;
+			right: 240px;
+		}
+	</style>
+</head>
+<body>
+	<div class="robot">
+		<div class="head">
+			<div class="eyel"></div>
+			<div class="eyer"></div>
+		</div>
+		<div class="earl"></div>
+		<div class="earr"></div>
+		<div class="body"></div>
+		<div class="arml"></div>
+		<div class="armr"></div>
+		<div class="legl"></div>
+		<div class="legr"></div>
+	</div>
+</body>
+</html>

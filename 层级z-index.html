@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>层级z-index</title>
+	<style type="text/css">
+		.hd{
+			width: 800px;
+			height: 500px;
+			border: solid 5px orangered;
+			margin: 50px auto;
+			position: relative;
+		}
+		.hd .x{
+			width: 300px;
+			height: 220px;
+			background: lightgreen;
+			position: absolute;
+			left: 100px;
+			top: 80px;
+			z-index: 5;/*值越大，层级越高，*/
+		}
+		.hd .y{
+			width: 320px;
+			height: 230px;
+			background: dodgerblue;
+			position: absolute;
+			left: 180px;
+			top: 200px;
+			z-index: 3;/*值越大，层级越高，*/
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+	两个脱离文档流的元素，如果有重叠哪个在上，哪个在下？？？
+
+	z-index特点：
+	1. 只有定位属性（position）的元素才有层级，
+    2. 如果不给元素加层级，默认层级为0
+    3. 如果层级一致，后来者居上。
+	4. 层级值越高，就越在上边。
+	 -->
+	<div class="hd">
+		<div class="x">
+			
+		</div>
+		<div class="y">
+			
+		</div>
+	</div>
+	
+</body>
+</html>
